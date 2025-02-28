@@ -55,7 +55,7 @@ def Scrap_data(url, site_url):
 
     try:
         options = webdriver.ChromeOptions()
-        options.add_argument("--headless")
+        options.add_argument("--headless") # delete if u want to see a chrome page
         service = Service(ChromeDriverManager().install())
 
         driver = webdriver.Chrome(service=service, options=options)
